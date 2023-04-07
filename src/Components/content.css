@@ -1,0 +1,72 @@
+
+#services {
+   max-height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+.contenItem{
+    height: 220px;
+    
+}
+ .form-control {
+    padding-left: 2.375rem;
+}
+#accordionApi,#searchDiv {
+    opacity: 1;
+}
+
+div h4{
+    color:brown ;
+}
+#services p{
+    height: 130px;
+    font-size: 0.8rem;
+    text-align: right;   
+    justify-content: right;
+    padding-right: 2px;
+}
+.accordion-body{
+    background-color: aliceblue!important;
+}
+.accordion-button,
+.accordion-body{
+    padding: 5px!important;
+    font-size: 0.8rem!important;
+    
+}
+
+
+  
+  .btn-search {
+    width: 70px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+  }
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #accordionApi,#searchDiv {
+        opacity: 1;
+        transition: opacity 5s;
+    }
+    
+    #accordionApi.deactive,#searchDiv.deactive{
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+}
