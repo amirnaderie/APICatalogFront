@@ -53,12 +53,9 @@ const Content = () => {
           
         <div className="col-lg-4  col-md-6 mb-4 contenItem " key={item.id}>
           <div className="shadow-lg  text-center rounded border-bottom border-4 ">
-           
             <h4 className="fw-normal fs-6">{item.title}</h4>
-            
-            <p className="overflow-auto  pt-3 px-2 border-top text-justify text-right text-justify lh-2">
-              نــوع:{item.type}<br></br><br></br>
-              {item.desc}
+            <p className="overflow-auto  pt-4 px-2 border-top text-justify text-right text-justify lh-2">
+             {item.desc}
             </p>
             <div className={`accordion position-relative ${toggledMenu?" deactive":""}`} id={`accordionApi`}>
               <div className="accordion-item">
@@ -87,7 +84,7 @@ const Content = () => {
                       color: "green",
                      
                     }}
-                      aria-hidden="true" onClick={() => getFile(item.url)}>دانلود فایل تست </i>
+                      aria-hidden="true" onClick={() => getFile(item.name)}>نــام: {item.name}</i>
                     
                   </div>
                 </div>
